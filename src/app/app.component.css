@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  border: #111 solid 1px;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #f0f0f0;
+}
+
+app-results {
+  margin:10px;
+}

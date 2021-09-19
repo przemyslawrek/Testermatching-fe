@@ -1,0 +1,7 @@
+<mat-form-field appearance="fill">
+  <mat-label for="name">{{name}}:</mat-label>
+  <mat-select [(value)]="chosenElements" multiple>
+    <mat-option #matOptionRef (click)="optionClicked(matOptionRef)"  [value]="allValue"  >All</mat-option>
+    <mat-option #matOptionRef (click)="optionClicked(matOptionRef)"  *ngFor="let el of elements"  [value]="el.id">{{el.description}}</mat-option>
+  </mat-select>
+</mat-form-field>

@@ -1,0 +1,6 @@
+<div>
+  <app-select-multiple [(chosenElements)]="chosenCountries" name="Countries" [elements]="countries" [allValue]="'ALL'"></app-select-multiple>
+  <app-select-multiple [(chosenElements)]="chosenDevices" name="Devices" [elements]="devices" [allValue]="-1"></app-select-multiple>
+  <button  mat-raised-button color="primary" (click)="onSearch()"> Search!</button>
+
+</div>

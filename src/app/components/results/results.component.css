@@ -1,0 +1,11 @@
+.searchResultTable{
+  width: 100%;
+  background-color: #ddd;
+}
+.searchResultTable th{
+  background-color: #ccc;
+text-align: center}
+
+.searchResultTable .mat-row:nth-child(even){
+  background-color: #eee;
+}

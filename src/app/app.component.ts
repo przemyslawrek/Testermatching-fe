@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {TesterExperience} from "./models/testerExperience";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tester-matching-fe';
+  title = 'aaaa';
+  searchResult: TesterExperience[] = [];
+
+
+  searchResultChange($event: TesterExperience[]) {
+    console.log("appComp: ",$event);
+    this.searchResult = $event;
+  }
 }
