@@ -16,7 +16,7 @@ export class SearchBarComponent implements OnInit {
   devices: SelectElement<number>[] = [];
   chosenDevices: number[] = [];
   chosenCountries: string[] = [];
-  subscriptions: Map<string, Subscription> = new Map<string, Subscription>();
+  private subscriptions: Map<string, Subscription> = new Map<string, Subscription>();
 
   constructor(private service: TesterMatchingService) {
   }

@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {TesterExperience} from "../../models/testerExperience";
 
 @Component({
@@ -6,12 +6,7 @@ import {TesterExperience} from "../../models/testerExperience";
   templateUrl: './results.component.html',
   styleUrls: ['./results.component.css']
 })
-export class ResultsComponent implements OnInit{
+export class ResultsComponent{
   @Input() searchResult: TesterExperience[] = [];
   displayedColumns: string[] = ['firstName', "lastName", "experience"];
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

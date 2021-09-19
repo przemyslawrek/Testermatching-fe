@@ -1,7 +1,7 @@
 <div *ngIf="searchResult.length>0;then resultTable else noResults">here is ignored</div>
 <ng-template #resultTable>
   <p>Results count: {{searchResult.length}}</p>
-  <table [className]="'searchResultTable'" mat-table [dataSource]="searchResult" class="mat-elevation-z8">
+  <table  mat-table [dataSource]="searchResult" class="searchResultTable mat-elevation-z8">
     <ng-container matColumnDef="firstName">
       <th mat-header-cell *matHeaderCellDef>First name</th>
       <td mat-cell *matCellDef="let singleResult"> {{singleResult.firstName}} </td>
